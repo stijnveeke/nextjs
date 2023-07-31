@@ -104,6 +104,43 @@ export const ContactForm: React.FC = () => {
                   </div>
                 )}
               </Box>
+              <HStack
+                mb={10}
+                spacing={5}
+                px={{
+                  base: 0,
+                  sm: 5,
+                }}
+                alignItems="center"
+                justifyContent={"center"}
+              >
+                <IconButton
+                  aria-label="facebook"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  p={4}
+                  className="hover:bg-primary"
+                  _hover={{ bg: "primary" }}
+                  icon={
+                    <Link
+                      href="https://www.google.com/maps/dir//Moerstraatseweg+40,+4727+SK+Moerstraten/@51.5329121,4.3398717,16z/data=!4m18!1m8!3m7!1s0x47c41496ed322317:0x69aff8a01f3a62f7!2sMoerstraatseweg+40,+4727+SK+Moerstraten!3b1!8m2!3d51.5333979!4d4.3430481!16s%2Fg%2F11c5qff8y7!4m8!1m0!1m5!1m1!1s0x47c41496ed322317:0x69aff8a01f3a62f7!2m2!1d4.3430481!2d51.5333979!3e3?entry=ttu"
+                      target="_blank"
+                    >
+                      <Flex>
+                        <MdLocationOn
+                          className="text-primaryHover mr-2 my-2"
+                          size="28px"
+                        />
+                        Moerstraatseweg 40 <br />
+                        4727SK Moerstraten
+                      </Flex>
+                    </Link>
+                  }
+                />
+              </HStack>
+            </Box>
+            <Box pb={{ base: 5, sm: 5, md: 8, lg: 10 }} className="justify">
               <Center
                 className="max-w-full"
                 display={{
@@ -196,8 +233,6 @@ export const ContactForm: React.FC = () => {
                   />
                 </HStack>
               </Center>
-            </Box>
-            <Box pb={{ base: 5, sm: 5, md: 8, lg: 10 }} className="justify">
               <Center
                 alignItems={"flex-start"}
                 display={{
