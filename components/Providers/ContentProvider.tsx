@@ -15,13 +15,10 @@ export const ContentProvider: React.FC<{
   }>;
 }> = ({ children, contents }) => {
   const getContent = (contentUrl: string) => {
-    // console.log("getContent", contents, contentUrl);
-    // console.log(contentUrl.split("/")[1]);
     const content = contents.find(
       (c) => c.contentFile === contentUrl.split("/")[1]
     );
 
-    console.log("content", content);
     if (content) {
       return content.content;
     }

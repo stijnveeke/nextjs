@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import { Stack } from "./Stack";
-import Image from "next/image";
-import { Heading, VStack, Text } from "@chakra-ui/react";
 import { ContentToHtml } from "./ContentToHtml";
 import { HeaderTitle } from "./HeaderTitle";
 

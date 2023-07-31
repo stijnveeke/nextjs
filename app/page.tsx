@@ -3,10 +3,23 @@ import { getColors, getColorCode } from "../lib/Colors";
 import getSiteSections from "../lib/getSiteSections";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import EComponentOptions from "../enums/EComponentOptions";
+import getContents from "../lib/getContents";
 
 const variant = "default";
 export default async function Page() {
   const sections = await getSiteSections();
+  const contents = await getContents();
+
+  const getContent = (contentUrl: string) => {
+    const content = contents.find(
+      (c) => c.contentFile === contentUrl.split("/")[1]
+    );
+
+    if (content) {
+      return content.content;
+    }
+    return "";
+  };
 
   const getComponent = (
     component:
@@ -43,7 +56,7 @@ export default async function Page() {
   };
 
   if (!sections) return <div>Loading...</div>;
-  const contents = sections.map((section) => {
+  const items = sections.map((section) => {
     const comp = getComponent(section.component, variant);
     const Component = React.lazy(
       () => import(`../components/${comp.component}`)
@@ -61,11 +74,14 @@ export default async function Page() {
             {...section}
             variant={comp.componentVariant}
             options={comp.options}
+            {...((section as any).contentUrl && {
+              content: getContent((section as any).contentUrl),
+            })}
           />
         </div>
       </React.Suspense>
     );
   });
 
-  return <div>{contents}</div>;
+  return <div>{items}</div>;
 }

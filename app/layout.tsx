@@ -23,6 +23,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link type="image/png" rel="icon" href="assets/dierenmanieren.png" />
+        <meta name="description" content="" />
       </head>
       <body className={inter.className}>
         <ServerProviders>
