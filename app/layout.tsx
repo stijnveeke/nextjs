@@ -1,15 +1,12 @@
 import { useEffect } from "react";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import getNavbar from "../lib/getNavbar";
-import NavbarServer from "../components/Navbar/NavbarServer";
 import { ClientProviders } from "./ClientProviders";
 import ChakraServerNavbar from "../components/Navbar/ChakraServerNavbar";
 import PageContent from "./PageContent";
 import React from "react";
-import { Server } from "http";
 import { ServerProviders } from "./ServerProviders";
 
 const inter = Inter({ subsets: ["latin"] });
