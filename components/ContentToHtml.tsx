@@ -21,9 +21,10 @@ export const ContentToHtml: React.FC<{
         })}
       >
         {content.split("\n").map((paragraph, index) => (
-          <Text size="lg" className={noOfLines ? "" : "pb-2"} key={index}>
+          <>
             {paragraph}
-          </Text>
+            <br />
+          </>
         ))}
       </Box>
       {noOfLines && (
