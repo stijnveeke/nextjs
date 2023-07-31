@@ -1,0 +1,22 @@
+[
+  {
+    "colorName": "primary",
+    "colorCode": "#86BAA1"
+  },
+  {
+    "colorName": "primaryHover",
+    "colorCode": "#07604F"
+  },
+  {
+    "colorName": "secondary",
+    "colorCode": "#B6DDC6"
+  },
+  {
+    "colorName": "tertiary",
+    "colorCode": "#EDEAD0"
+  },
+  {
+    "colorName": "bg",
+    "colorCode": "#ffffff"
+  }
+]

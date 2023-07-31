@@ -1,0 +1,120 @@
+{
+  "logo": {
+    "path": "dierenmanieren.png",
+    "alt": "Logo"
+  },
+  "styles": {
+    "base": {
+      "bg": "bg-tertiary"
+    },
+    "navItems": {
+      "text": "primary"
+    },
+    "socialLinks": {
+      "text": "primary"
+    }
+  },
+  "_hover": {
+    "navItems": {
+      "color": "primaryHover"
+    },
+    "socialLinks": {
+      "color": "primaryHover"
+    }
+  },
+  "navItems": [
+    {
+      "label": "Over mij",
+      "scrollId": "aboutme"
+    },
+    {
+      "label": "Collega's",
+      "scrollId": "colleagues",
+      "children": [
+        {
+          "label": "Paardjes",
+          "subLabel": "",
+          "scrollId": "horses"
+        },
+        {
+          "label": "River",
+          "subLabel": "",
+          "scrollId": "dog"
+        },
+        {
+          "label": "Nijntjes",
+          "subLabel": "",
+          "scrollId": "bunnies"
+        }
+      ]
+    },
+    {
+      "label": "Begeleiding",
+      "scrollId": "supervision"
+    },
+    {
+      "label": "Diensten",
+      "scrollId": "services",
+      "children": [
+        {
+          "label": "Dagbesteding",
+          "subLabel": "",
+          "scrollId": "daycare"
+        },
+        {
+          "label": "Paarden coaching",
+          "subLabel": "",
+          "scrollId": "horsecoaching"
+        },
+        {
+          "label": "Honden coaching",
+          "subLabel": "",
+          "scrollId": "dogcoaching"
+        }
+      ]
+    },
+    {
+      "label": "Financiering",
+      "scrollId": "financing"
+    },
+    {
+      "label": "Contact",
+      "scrollId": "contact"
+    }
+  ],
+  "socialLinks": [
+    {
+      "icon": "FaFacebook",
+      "linkOptions": {
+        "href": "https://www.facebook.com/profile.php?id=100092986851803",
+        "target": "_blank"
+      }
+    },
+    {
+      "icon": "FaInstagram",
+      "linkOptions": {
+        "href": "https://instagram.com/_dierenmanieren_?igshid=MzNlNGNkZWQ4Mg==",
+        "target": "_blank"
+      }
+    },
+    {
+      "icon": "FaWhatsapp",
+      "linkOptions": {
+        "href": "https://wa.me/31629178009",
+        "target": "_blank"
+      }
+    },
+    {
+      "icon": "MdMail",
+      "linkOptions": {
+        "href": "mailto:info.dierenmanieren@gmail.com"
+      }
+    },
+    {
+      "icon": "MdPhone",
+      "linkOptions": {
+        "href": "tel:31629178009"
+      }
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "introduction",
+    "title": "Welkom",
+    "contentUrl": "contents/introduction.md",
+    "component": "HeaderWithText"
+  },
+  {
+    "id": "aboutme",
+    "title": "Over Mij",
+    "contentUrl": "contents/aboutme.md",
+    "component": "About",
+    "images": [
+      {
+        "path": "/assets/IntroductionPicture1.jpg",
+        "alt": "picture 1"
+      },
+      {
+        "path": "/assets/IntroductionPicture2.jpg",
+        "alt": "picture 2"
+      },
+      {
+        "path": "/assets/IntroductionPicture3.jpg",
+        "alt": "picture 3"
+      }
+    ]
+  },
+  {
+    "id": "colleagues",
+    "title": "Collega's",
+    "component": [
+      {
+        "variant": "default",
+        "component": "Colleagues",
+        "componentVariant": "default",
+        "options": []
+      },
+      {
+        "variant": "variant2",
+        "component": "Colleagues",
+        "componentVariant": "horizontal",
+        "options": ["useReadMore"]
+      },
+      {
+        "variant": "variant3",
+        "component": "Colleagues",
+        "options": ["noSubHeaders", "useReadMore"]
+      },
+      {
+        "variant": "variant4",
+        "component": "Colleagues",
+        "options": ["horizontal"]
+      },
+      {
+        "variant": "variant5",
+        "component": "Colleagues",
+        "options": ["horizontal", "useReadMore"]
+      },
+      {
+        "variant": "variant6",
+        "component": "Colleagues",
+        "options": ["horizontal", "useReadMore", "noSubHeaders"]
+      }
+    ],
+    "items": [
+      {
+        "id": "horses",
+        "title": "Paarden",
+        "content": [
+          {
+            "name": "Magic",
+            "contentUrl": "contents/magic.md",
+            "content": "Magic is een lieve haflinger ruin uit 2005. Ik kreeg hem toen hij 9 was dus hij is al een tijdje bij mij. We hebben dan ook veel meegemaakt samen, daardoor kennen we elkaar heel goed. We weten precies wat we kunnen verwachten van elkaar. Waar wij vooral erg van genieten is buiten rijden, door de bossen en door water, hij is net een zeepaardje! Maar waar we beiden het meest van houden is samen relaxen, gewoon alleen maar zijn. Luisterend naar zijn rustige ademhaling en kijkend naar zijn steeds dichtvallende ogen.\n Op ons terrein rij ik vaak met zo min mogelijk tuig, alleen een neckrope is eigenlijk genoeg. Ik rij oefeningen in de bak, of ik race over de track maar soms besluit ik die dag om boog te schieten vanaf Magic (zie foto), en ook dat doen we met neckrope. Want zo braaf is hij!  Magic zal ik dan ook veel gebruiken met paardencoaching (naast of op het paard).",
+            "image": {
+              "path": "/assets/ColleaguesMagic.jpg",
+              "alt": "Magic"
+            }
+          },
+          {
+            "name": "O’Melly",
+            "contentUrl": "contents/omelly.md",
+            "content": "Melly de grote goedzak, is een friese ruin van 1996, een echte opa al dus! Melly hebben we vanaf zijn 18e, een jaartje korter dan Magic, maar ook al best een tijd dus. Door zijn ouderdom heeft hij wat gezondheidskwaaltjes en hij heeft al een aantal keer aan de poort van de hemel gestaan, maar besloot dan net op tijd dat hij nog niet klaar was hier op aarde! Hij is een hele goede leermeester voor het jongste paard Ares, Melly is erg rustig van karakter en een echte broekzak paard. Waar jij bent is Melly, en dan gewoon om bij je te zijn, dat is alles wat hij wilt. Hij voelt perfect aan hoe je in je vel zit, gaat het goed dat is Melly er om het te vieren, ben je verdrietig of gaat het niet lekker, dan is Melly er om je te troosten. En zelfs als je het zelf even niet weet dan is daar Melly om dat samen met jou uit te zoeken! Melly doet ook mee met de paardencoaching, maar alleen naast hem vanaf de grond.",
+            "image": {
+              "path": "/assets/ColleaguesOMelly.jpg",
+              "alt": "O’Melly"
+            }
+          },
+          {
+            "name": "Ares",
+            "contentUrl": "contents/ares.md",
+            "content": "Ares is de klier van het stel, en met 2019 als zijn geboortejaar dus ook de jongste. Het is een knappe vuilnisbakken ras, zijn moeder een kruising tussen een fjord en een konik paard en zijn vader was een iers sport paard! Ares heb ik vanaf zijn eerste jaar, hij zag er toen niet zo best uit, een buik vol wormen en enorm lange hoeven waardoor hij met lopen over zijn eigen benen struikelde. Hier is hij gelukkig prima van hersteld en hij is al een flinke jongen. Hij is erg vriendelijk maar hij ziet het leven nog als 1 groot spel, en zit vaak de andere paarden uit te dagen om te spelen, en wil dit soms ook nog proberen bij mensen. Daardoor mag hij alleen nog kijken als er paardencoaching word gegeven, later als hij (mentaal) groot is betrek ik hem er natuurlijk ook bij.",
+            "image": {
+              "path": "/assets/ColleaguesAres.jpg",
+              "alt": "Ares"
+            }
+          },
+          {
+            "name": "Thelma",
+            "contentUrl": "contents/thelma.md",
+            "content": "Sinds juni 2023 maakt deze mini shetlander merrie de kudde compleet! Ze is al wat ouder, van 2005, maar dit is totaal niet te merken. Stilstaan is haar niet bekend dus ze is een erg actief dametje, altijd in de weer. Ze heeft heel wat meegemaakt en is daardoor wat onzeker en terughoudend. Aanraken vind ze niet zo fijn, alleen als het vanuit haarzelf komt. Ze is nog erg aan het wennen aan het leven in een kudde. Ze zal dan ook nog even niet gebruikt worden tijdens de coach sessies, pas als ze helemaal op haar gemak is en zich 100% veilig voelt!",
+            "image": {
+              "path": "/assets/ColleaguesThelma.jpg",
+              "alt": "Thelma"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dog",
+        "title": "Hond",
+        "content": [
+          {
+            "name": "River",
+            "contentUrl": "contents/river.md",
+            "content": "River is mijn labradoodle reu, geboren in 2019 en vanaf pups af aan bij mij. Een heerlijke enthousiaste krullebol, die soms wat lomp kan zijn vanwege zijn grootte. Lief voor alles en iedereen, kinderen kunnen hem meenemen weg van mij en leuk met hem trainen. Andere honden vind hij gezellig, maar trekt vaak zijn eigen plan. Het is echt een mensen hond, zelfs de dierenarts vind hij helemaal leuk! Hij is erg actief, stilzitten is niks voor hem, spelen, knuffelen, wandelen, trainen of een agility parcour lopen, is het liefst wat hij doet. \nMet River begin ik juni 2023 met de opleiding therapiehond. Na de opleiding gaan we samen langs tehuizen, instellingen en zelfs scholen. Om meer mensen te laten ervaren wat de nabijheid en aandacht van een hond (dier) kan doen, geruststellen, vergeten van problemen en vooral veel positiviteit bezorgen!",
+            "image": {
+              "path": "/assets/ColleaguesRiver.jpg",
+              "alt": "River"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bunnies",
+        "title": "Konijnen",
+        "content": [
+          {
+            "name": "Nijntjes",
+            "contentUrl": "contents/nijntjes.md",
+            "content": "Op de boederij hebben we ook 4 lieve konijnen. Ze zijn heel lief en super nieuwschierig, en gooien dan ook graag emmers om en geven je een duwtje als je niet snel genoeg bent met het snoepje geven! Big t en romy zijn de grote konijnen, hun zijn niet bang en kan je prima aaien, ze kruipen ook nog wel eens op je schoot. De 2 kleine, lil T en pammy zijn wat voorzichter, ze eten uit je hand en gaan graag naast je zitten/ liggen. Maar aaien vinden ze nog wat eng. Oppakken vinden ze allemaal niet zo leuk, en worden ze erg bang van. Dus dat doe ik liever niet, alleen voor medische redenen. Het is heerlijk om bij de konijnen te zitten en even tot jezelf te komen, ze komen dan meestal lekker tegen je aan liggen!",
+            "image": {
+              "path": "/assets/ColleaguesNijntjes.jpg",
+              "alt": "Nijntjes"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "supervision",
+    "title": "Begeleiding",
+    "component": "HeaderWithText",
+    "contentUrl": "contents/supervision.md"
+  },
+  {
+    "id": "services",
+    "title": "Diensten",
+    "component": [
+      {
+        "variant": "default",
+        "component": "Services",
+        "options": ["noImage"]
+      },
+      {
+        "variant": "variant2",
+        "component": "Services",
+        "options": ["noImage"]
+      }
+    ],
+    "items": [
+      {
+        "id": "daycare",
+        "title": "Dagbesteding",
+        "contentUrl": "contents/daycare.md",
+        "content": "",
+        "price": "€ 50,- per dag"
+      },
+      {
+        "id": "horsecoaching",
+        "contentUrl": "contents/horsecoaching.md",
+        "title": "Paarden coaching",
+        "content": "",
+        "price": "€ 50,- per uur"
+      },
+      {
+        "id": "dogcoaching",
+        "contentUrl": "contents/dogcoaching.md",
+        "title": "Honden coaching",
+        "content": "",
+        "price": "€ 50,- per uur"
+      }
+    ]
+  },
+  {
+    "id": "financing",
+    "title": "Financiering",
+    "contentUrl": "contents/financing.md",
+    "component": "HeaderWithText"
+  },
+  {
+    "id": "contact",
+    "title": "string",
+    "component": "ContactForm"
+  }
+]
