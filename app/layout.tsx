@@ -20,7 +20,12 @@ export default async function RootLayout({ children }) {
   const navbar = await getNavbar();
   const bodyRef = React.createRef<HTMLBodyElement>();
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      style={{
+        scrollBehavior: "smooth",
+      }}
+    >
       <head>
         <link type="image/png" rel="icon" href="assets/dierenmanieren.png" />
         <meta name="description" content="" />

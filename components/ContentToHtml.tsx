@@ -20,7 +20,12 @@ export const ContentToHtml: React.FC<{
           noOfLines: expandedCount,
         })}
       >
-        {content}
+        {content.split("\n").map((paragraph, index) => (
+          <>
+            {paragraph}
+            <br />
+          </>
+        ))}
       </Box>
       {noOfLines && (
         <Button onClick={toggleExpandedCount}>
