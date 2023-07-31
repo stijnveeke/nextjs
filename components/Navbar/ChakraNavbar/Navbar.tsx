@@ -274,7 +274,7 @@ export const NavBar: React.FC<{
         style={{
           top: "100px",
           maxHeight: "80vh",
-          overflowY: "scroll",
+          overflowY: "hidden",
         }}
         in={isOpen}
         animateOpacity

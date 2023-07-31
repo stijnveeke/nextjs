@@ -24,8 +24,9 @@ export const MobileNavItem: React.FC<{
   const { label, href, children } = item;
   const { isOpen, onToggle } = useDisclosure();
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
+    <Stack spacing={0} onClick={children && onToggle}>
       <Box
+        cursor={"pointer"}
         py={2}
         as="a"
         {...(children
@@ -33,8 +34,9 @@ export const MobileNavItem: React.FC<{
           : {
               onClick: CloseDisclosure,
             })}
-        href={href ?? "#"}
+        href={"#" + href ?? "#"}
         justifyContent={"space-between"}
+        display={"flex"}
         alignItems={"center"}
         _hover={{
           textDecoration: "none",
@@ -66,6 +68,7 @@ export const MobileNavItem: React.FC<{
           {children &&
             children.map((child, index) => (
               <Box
+                cursor={"pointer"}
                 as="a"
                 key={index}
                 href={child.href}
