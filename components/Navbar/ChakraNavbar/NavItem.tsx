@@ -35,7 +35,7 @@ export const NavItem: React.FC<
         <PopoverTrigger>
           <Link
             p={2}
-            href={href ?? "#"}
+            href={"#" + href ?? "#"}
             fontWeight={500}
             color={"primary"}
             _hover={{
@@ -76,7 +76,7 @@ const NavSubItem: React.FC<NavItemProps & { subLabel?: string }> = ({
 }) => {
   return (
     <Link
-      href={href ?? "#"}
+      href={"#" + href ?? "#"}
       display={"block"}
       role="group"
       rounded={"md"}
@@ -100,7 +100,14 @@ const NavSubItem: React.FC<NavItemProps & { subLabel?: string }> = ({
             fontSize={"sm"}
             _groupHover={{ color: "primaryBold" }}
           >
-            {subLabel}
+            {/* {subLabel ?? (
+              <>
+                tellus in metus vulputate eu scelerisque felis imperdiet proin
+                fermentum leo vel orci porta non
+              </>
+            )} */}
+            tellus in metus vulputate eu scelerisque felis imperdiet proin
+            fermentum leo vel orci porta non
           </Text>
         </Box>
         <Flex

@@ -155,7 +155,7 @@
       {
         "variant": "variant2",
         "component": "Services",
-        "options": ["noImage"]
+        "options": ["noImage", "horizontal"]
       }
     ],
     "items": [
