@@ -22,7 +22,15 @@ export const ContentToHtml: React.FC<{
         })}
         className="content-styling"
       >
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            a: ({ node, ...props }) => (
+              <a {...props} target="_blank" rel="noopener noreferrer" />
+            ),
+          }}
+        >
+          {content}
+        </ReactMarkdown>
       </Box>
       {noOfLines && (
         <Button onClick={toggleExpandedCount}>
