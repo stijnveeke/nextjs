@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Text, Box, Button } from "@chakra-ui/react";
+import ReactMarkdown from "react-markdown";
 
 export const ContentToHtml: React.FC<{
   content: string;
@@ -19,13 +20,11 @@ export const ContentToHtml: React.FC<{
         {...(expandedCount && {
           noOfLines: expandedCount,
         })}
+        className="content-styling"
       >
-        {content.split("\n").map((paragraph, index) => (
-          <>
-            {paragraph}
-            <br />
-          </>
-        ))}
+        {/* {content.split("\n").map((paragraph, index) => ( */}
+        <ReactMarkdown>{content}</ReactMarkdown>
+        {/* ))} */}
       </Box>
       {noOfLines && (
         <Button onClick={toggleExpandedCount}>
