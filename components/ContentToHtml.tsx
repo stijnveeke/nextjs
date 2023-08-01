@@ -22,13 +22,11 @@ export const ContentToHtml: React.FC<{
         })}
         className="content-styling"
       >
-        {/* {content.split("\n").map((paragraph, index) => ( */}
         <ReactMarkdown>{content}</ReactMarkdown>
-        {/* ))} */}
       </Box>
       {noOfLines && (
         <Button onClick={toggleExpandedCount}>
-          {expandedCount ? "Read More" : "Read Less"}
+          {expandedCount ? "Lees meer" : "Lees minder"}
         </Button>
       )}
     </>
