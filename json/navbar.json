@@ -29,24 +29,7 @@
     },
     {
       "label": "Collega's",
-      "scrollId": "colleagues",
-      "children": [
-        {
-          "label": "Paardjes",
-          "subLabel": "",
-          "scrollId": "horses"
-        },
-        {
-          "label": "River",
-          "subLabel": "",
-          "scrollId": "dog"
-        },
-        {
-          "label": "Nijntjes",
-          "subLabel": "",
-          "scrollId": "bunnies"
-        }
-      ]
+      "scrollId": "colleagues"
     },
     {
       "label": "Begeleiding",
