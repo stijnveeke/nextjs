@@ -27,6 +27,9 @@ export const ContentToHtml: React.FC<{
             a: ({ node, ...props }) => (
               <a {...props} target="_blank" rel="noopener noreferrer" />
             ),
+            strong: ({ node, ...props }) => (
+              <strong {...props} className={"text-primaryHover"} />
+            ),
           }}
         >
           {content}

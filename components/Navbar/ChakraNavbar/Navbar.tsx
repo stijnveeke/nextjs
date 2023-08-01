@@ -36,7 +36,7 @@ export const NavBar: React.FC<{
   };
 
   return (
-    <Box marginTop={110} display={{ base: "relative", lg: "block" }}>
+    <Box marginTop={150} display={{ base: "relative", lg: "block" }}>
       <Flex
         className={
           "bg-tertiary text-primary p-1 border-b-2 border-primary border-solid z-10"
@@ -85,7 +85,7 @@ export const NavBar: React.FC<{
             }}
             color={"gray.800"}
           >
-            <img src={logo.src} alt="logo" width="75" height="75" />
+            <img src={logo.src} alt="logo" width="125" height="125" />
           </Link>
 
           <Flex
@@ -101,6 +101,7 @@ export const NavBar: React.FC<{
           <VStack
             display={{ base: "flex", xl: "none" }}
             className="col-span-1"
+            justifyContent={"center"}
             justify={"flex-end"}
             direction={"row"}
             alignItems={"center"}
@@ -272,7 +273,7 @@ export const NavBar: React.FC<{
       <Collapse
         className="fixed w-full z-10 bg-tertiary base:h-full"
         style={{
-          top: "100px",
+          top: "125px",
           maxHeight: "80vh",
           overflowY: "scroll",
         }}

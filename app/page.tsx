@@ -66,7 +66,7 @@ export default async function Page() {
         <div
           className="mt-4 mx-1"
           style={{
-            scrollMarginTop: "100px",
+            scrollMarginTop: "150px",
           }}
           id={section.id}
         >

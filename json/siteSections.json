@@ -33,32 +33,6 @@
         "variant": "default",
         "component": "Colleagues",
         "componentVariant": "default",
-        "options": []
-      },
-      {
-        "variant": "variant2",
-        "component": "Colleagues",
-        "componentVariant": "horizontal",
-        "options": ["useReadMore"]
-      },
-      {
-        "variant": "variant3",
-        "component": "Colleagues",
-        "options": ["noSubHeaders", "useReadMore"]
-      },
-      {
-        "variant": "variant4",
-        "component": "Colleagues",
-        "options": ["horizontal"]
-      },
-      {
-        "variant": "variant5",
-        "component": "Colleagues",
-        "options": ["horizontal", "useReadMore"]
-      },
-      {
-        "variant": "variant6",
-        "component": "Colleagues",
         "options": ["horizontal", "useReadMore", "noSubHeaders"]
       }
     ],
