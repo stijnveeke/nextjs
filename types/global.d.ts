@@ -22,6 +22,27 @@ declare global {
 
   interface IContactForm extends ISiteSection, IComponentSection {}
 
+  interface ICarouselWithCaption extends ISiteSection, IComponentSection {
+    cards: Array<{
+      imageUrl: string;
+      imageAlt: string;
+      marginTop?: {
+        base?: string;
+        sm?: string;
+        md?: string;
+        lg?: string;
+        xl?: string;
+      };
+      marginLeft?: {
+        base?: string;
+        sm?: string;
+        md?: string;
+        lg?: string;
+        xl?: string;
+      };
+    }>;
+  }
+
   interface IIntroduction extends ISiteSection, IComponentSection {
     content: string;
     contentUrl: string;

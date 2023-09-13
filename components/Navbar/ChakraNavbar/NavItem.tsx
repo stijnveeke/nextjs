@@ -100,14 +100,7 @@ const NavSubItem: React.FC<NavItemProps & { subLabel?: string }> = ({
             fontSize={"sm"}
             _groupHover={{ color: "primaryBold" }}
           >
-            {/* {subLabel ?? (
-              <>
-                tellus in metus vulputate eu scelerisque felis imperdiet proin
-                fermentum leo vel orci porta non
-              </>
-            )} */}
-            tellus in metus vulputate eu scelerisque felis imperdiet proin
-            fermentum leo vel orci porta non
+            {subLabel ?? ""}
           </Text>
         </Box>
         <Flex

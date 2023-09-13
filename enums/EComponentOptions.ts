@@ -6,6 +6,7 @@ export const enum EComponentOptions {
   noPrice = "noPrice",
   noSubHeaders = "noSubHeaders",
   useReadMore = "useReadMore",
+  noContainer = "noContainer",
 }
 
 export default EComponentOptions;

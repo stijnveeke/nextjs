@@ -1,5 +1,41 @@
 [
   {
+    "id": "carouselHero",
+    "title": "Carousel Hero",
+    "component": [
+      {
+        "variant": "default",
+        "component": "FullWidthCarousel",
+        "componentVariant": "default",
+        "options": ["noContainer"]
+      }
+    ],
+    "cards": [
+      {
+        "imageUrl": "/assets/CarouselImage1.jpg",
+        "imageAlt": "picture 1",
+        "marginTop": {
+          "base": "30%",
+          "lg": "25%"
+        }
+      },
+      {
+        "imageUrl": "/assets/carouselimagewebsitefullwidth2.jpeg",
+        "imageAlt": "picture 2",
+        "marginTop": {
+          "base": "65%"
+        }
+      },
+      {
+        "imageUrl": "/assets/CarouselImage3.jpeg",
+        "imageAlt": "picture 3",
+        "marginTop": {
+          "base": "45%"
+        }
+      }
+    ]
+  },
+  {
     "id": "introduction",
     "title": "Welkom",
     "contentUrl": "contents/introduction.md",
@@ -138,7 +174,7 @@
         "title": "Dagbesteding",
         "contentUrl": "contents/daycare.md",
         "content": "",
-        "price": "€ 50,- per dag"
+        "price": "€ 50,- per dagdeel"
       },
       {
         "id": "horsecoaching",

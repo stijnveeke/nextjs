@@ -34,7 +34,8 @@ export default async function RootLayout({ children }) {
         <ServerProviders>
           <ClientProviders>
             <ChakraServerNavbar />
-            <PageContent>{children}</PageContent>
+            {/* <PageContent>{children}</PageContent> */}
+            {children}
             <Footer />
           </ClientProviders>
         </ServerProviders>

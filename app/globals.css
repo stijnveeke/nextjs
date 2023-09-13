@@ -111,10 +111,10 @@ body {
 
 @layer base {
   :root {
-    --color-primary: #86baa1;
-    --color-primaryHover: #07604f;
-    --color-secondary: #b6ddc6;
-    --color-tertiary: #edead0;
+    --color-primary: #87baa1;
+    --color-primaryHover: #08614f;
+    --color-secondary: #b5dec7;
+    --color-tertiary: #edebd1;
     --color-bg: #ffffff;
     /* ... */
   }

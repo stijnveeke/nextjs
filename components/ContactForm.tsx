@@ -20,6 +20,7 @@ import {
   Textarea,
   Grid,
   Center,
+  Skeleton,
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -76,7 +77,12 @@ export const ContactForm: React.FC = () => {
             <Box>
               <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                 {!isLoaded ? (
-                  <Text>Loading...</Text>
+                  <Skeleton
+                    height="380px"
+                    style={{
+                      width: "100%",
+                    }}
+                  />
                 ) : (
                   <div
                     style={{
@@ -257,24 +263,105 @@ export const ContactForm: React.FC = () => {
                   <Box
                     m={{
                       base: 0,
-                      sm: 8,
+                      sm: 2,
                     }}
                     color="#0B0E3F"
                   >
                     <VStack spacing={5}>
-                      <FormControl id="name" className="w-full">
-                        <FormLabel>Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement pointerEvents="none">
-                            <BsPerson
-                              color="primaryHover"
-                              className="text-primaryHover"
+                      <form
+                        onSubmit={(e) => {
+                          e.preventDefault();
+                          const formElem = document.querySelector("form");
+                          const name =
+                            formElem.querySelector<HTMLFormElement>(
+                              'input[name="name"]'
+                            );
+                          const mail =
+                            formElem.querySelector<HTMLFormElement>(
+                              'input[name="mail"]'
+                            );
+                          const message =
+                            formElem.querySelector<HTMLFormElement>(
+                              'textarea[name="message"]'
+                            );
+
+                          const whatsappMessage =
+                            "Hallo, ik ben " +
+                            name.value +
+                            ". \nIk heb een vraag over " +
+                            message.value +
+                            ". \nMijn mail is " +
+                            mail.value +
+                            ".";
+                          window.open(
+                            "https://api.whatsapp.com/send?phone=31683542957&text=" +
+                              encodeURIComponent(whatsappMessage),
+                            "_blank"
+                          );
+                        }}
+                      >
+                        <FormControl id="name" className="w-full mt-2">
+                          <FormLabel>Your Name</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement pointerEvents="none">
+                              <BsPerson
+                                color="primaryHover"
+                                className="text-primaryHover"
+                              />
+                            </InputLeftElement>
+                            <Input
+                              type="text"
+                              name="name"
+                              required
+                              bg={"white"}
+                              size="md"
+                              className="focus:border-primary focus:border-3"
+                              _focusVisible={{
+                                borderColor: "primary",
+                              }}
+                              _hover={{
+                                borderColor: "primary",
+                              }}
                             />
-                          </InputLeftElement>
-                          <Input
-                            type="text"
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="mail" className="mt-2">
+                          <FormLabel>Mail</FormLabel>
+                          <InputGroup
+                            borderColor="primary"
+                            className="focus:border-primary"
+                            _focusVisible={{
+                              borderColor: "red",
+                            }}
+                          >
+                            <InputLeftElement pointerEvents="none">
+                              <MdOutlineEmail
+                                color="primaryHover"
+                                className="text-primaryHover"
+                              />
+                            </InputLeftElement>
+                            <Input
+                              name="mail"
+                              type="text"
+                              bg={"white"}
+                              required
+                              size="md"
+                              className="focus:border-primary focus:border-3"
+                              _focusVisible={{
+                                borderColor: "primary",
+                              }}
+                              _hover={{
+                                borderColor: "primary",
+                              }}
+                            />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="message" className="mt-2">
+                          <FormLabel>Message</FormLabel>
+                          <Textarea
+                            name="message"
                             bg={"white"}
-                            size="md"
+                            required
                             className="focus:border-primary focus:border-3"
                             _focusVisible={{
                               borderColor: "primary",
@@ -282,65 +369,24 @@ export const ContactForm: React.FC = () => {
                             _hover={{
                               borderColor: "primary",
                             }}
+                            placeholder="message"
                           />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Mail</FormLabel>
-                        <InputGroup
-                          borderColor="primary"
-                          className="focus:border-primary"
-                          _focusVisible={{
-                            borderColor: "red",
-                          }}
-                        >
-                          <InputLeftElement pointerEvents="none">
-                            <MdOutlineEmail
-                              color="primaryHover"
-                              className="text-primaryHover"
-                            />
-                          </InputLeftElement>
-                          <Input
-                            type="text"
-                            bg={"white"}
-                            size="md"
-                            className="focus:border-primary focus:border-3"
-                            _focusVisible={{
-                              borderColor: "primary",
-                            }}
+                        </FormControl>
+                        <FormControl id="formbutton" float="right">
+                          <Button
+                            variant="solid"
+                            color="white"
+                            bg="primary"
+                            className="bg-primary hover:bg-primaryHover mt-2"
                             _hover={{
-                              borderColor: "primary",
+                              bg: "primaryHover",
                             }}
-                          />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Message</FormLabel>
-                        <Textarea
-                          bg={"white"}
-                          className="focus:border-primary focus:border-3"
-                          _focusVisible={{
-                            borderColor: "primary",
-                          }}
-                          _hover={{
-                            borderColor: "primary",
-                          }}
-                          placeholder="message"
-                        />
-                      </FormControl>
-                      <FormControl id="name" float="right">
-                        <Button
-                          variant="solid"
-                          color="white"
-                          bg="primary"
-                          className="bg-primary hover:bg-primaryHover"
-                          _hover={{
-                            bg: "primaryHover",
-                          }}
-                        >
-                          Send Message
-                        </Button>
-                      </FormControl>
+                            type="submit"
+                          >
+                            Send Message
+                          </Button>
+                        </FormControl>
+                      </form>
                     </VStack>
                   </Box>
                 </Box>

@@ -36,7 +36,7 @@ export const NavBar: React.FC<{
   };
 
   return (
-    <Box marginTop={150} display={{ base: "relative", lg: "block" }}>
+    <Box marginTop={120} display={{ base: "relative", lg: "block" }}>
       <Flex
         className={
           "bg-tertiary text-primary p-1 border-b-2 border-primary border-solid z-10"

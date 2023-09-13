@@ -4,6 +4,7 @@ import getSiteSections from "../lib/getSiteSections";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import EComponentOptions from "../enums/EComponentOptions";
 import getContents from "../lib/getContents";
+import PageContent from "./PageContent";
 
 const variant = "default";
 export default async function Page() {
@@ -64,20 +65,37 @@ export default async function Page() {
     return (
       <React.Suspense fallback={<div>Loading...</div>} key={section.id}>
         <div
-          className="mt-4 mx-1"
+          className={
+            comp.options.includes(EComponentOptions.noContainer)
+              ? "mt-4"
+              : "mt-4 mx-1"
+          }
           style={{
             scrollMarginTop: "150px",
           }}
           id={section.id}
         >
-          <Component
-            {...section}
-            variant={comp.componentVariant}
-            options={comp.options}
-            {...((section as any).contentUrl && {
-              content: getContent((section as any).contentUrl),
-            })}
-          />
+          {comp.options.includes(EComponentOptions.noContainer) ? (
+            <Component
+              {...section}
+              variant={comp.componentVariant}
+              options={comp.options}
+              {...((section as any).contentUrl && {
+                content: getContent((section as any).contentUrl),
+              })}
+            />
+          ) : (
+            <PageContent>
+              <Component
+                {...section}
+                variant={comp.componentVariant}
+                options={comp.options}
+                {...((section as any).contentUrl && {
+                  content: getContent((section as any).contentUrl),
+                })}
+              />
+            </PageContent>
+          )}
         </div>
       </React.Suspense>
     );

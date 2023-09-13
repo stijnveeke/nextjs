@@ -19,15 +19,11 @@ export default function About({ id, title, content, images }: IAbout) {
           base: "column",
           md: "row",
         }}
-        // style={{
-        //   display: "flex",
-        //   flexDirection: "row",
-        // }}
       >
         <div>
           <ContentToHtml content={content} />
         </div>
-        <VStack>
+        {/* <VStack>
           {images.map((image, index) => (
             <Image
               className="p-2"
@@ -41,7 +37,7 @@ export default function About({ id, title, content, images }: IAbout) {
               key={index}
             />
           ))}
-        </VStack>
+        </VStack> */}
       </Flex>
     </div>
   );

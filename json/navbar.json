@@ -41,17 +41,17 @@
       "children": [
         {
           "label": "Dagbesteding",
-          "subLabel": "",
+          "subLabel": "Lekker gezellig een hele dag met de dieren bezig zijn.",
           "scrollId": "daycare"
         },
         {
           "label": "Paarden coaching",
-          "subLabel": "",
+          "subLabel": "Ik geef paardencoaching om te kijken hoe jij erbij staat en wat de paarden aangeven met hun lichaamstaal.",
           "scrollId": "horsecoaching"
         },
         {
           "label": "Honden coaching",
-          "subLabel": "",
+          "subLabel": "Ik geef met mijn hond River hondencoaching, hierin gaan we over in gesprek waar de persoon moeite mee heeft.",
           "scrollId": "dogcoaching"
         }
       ]
