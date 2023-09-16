@@ -104,7 +104,7 @@ export default function SmallWithSocial() {
             className="hover:bg-primary"
             _hover={{ bg: "primary" }}
             icon={
-              <Link href="tel:31629178009">
+              <Link href="tel:+31629178009">
                 <MdPhone className="text-primaryHover" size="28px" />
               </Link>
             }

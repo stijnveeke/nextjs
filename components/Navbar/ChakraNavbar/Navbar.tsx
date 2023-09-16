@@ -264,7 +264,7 @@ export const NavBar: React.FC<{
               className="hover:bg-primaryHover"
               _hover={{ bg: "primaryHover" }}
               icon={
-                <Link href="tel:31629178009">
+                <Link href="tel:+31629178009">
                   <MdPhone className="text-primary" size="28px" />
                 </Link>
               }
