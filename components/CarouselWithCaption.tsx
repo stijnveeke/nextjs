@@ -68,6 +68,7 @@ export const CarouselWithCaption: React.FC<ICarouselWithCaption> = ({
     <Box
       position="relative"
       style={{
+        marginTop: "5rem",
         height: "100vh",
         width: "100vw",
       }}

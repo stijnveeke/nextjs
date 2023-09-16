@@ -9,7 +9,12 @@ const FullWidthCarousel: React.FC<ICarouselWithCaption> = ({ cards }) => {
     height: "50vh", // Set your desired height here
   };
   return (
-    <div className="carousel-container" style={{}}>
+    <div
+      className="carousel-container"
+      style={{
+        marginTop: "5rem",
+      }}
+    >
       <Carousel
         showArrows={true}
         infiniteLoop={true}
@@ -26,6 +31,9 @@ const FullWidthCarousel: React.FC<ICarouselWithCaption> = ({ cards }) => {
                 src={card.imageUrl ?? ""}
                 alt={card.imageAlt ?? ""}
                 objectFit="cover"
+                style={{
+                  objectPosition: card.objectPosition.base,
+                }}
               />
             </div>
           );
