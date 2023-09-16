@@ -147,98 +147,96 @@ export const ContactForm: React.FC = () => {
               </HStack>
             </Box>
             <Box pb={{ base: 5, sm: 5, md: 8, lg: 10 }} className="justify">
-              <Center
+              {/* <Center
                 className="max-w-full"
                 display={{
                   base: "block",
                   sm: "flex",
                 }}
+              > */}
+              <HStack
+                mt={{ lg: 0, md: 0 }}
+                justifyContent={"space-evenly"}
+                spacing={5}
+                px={{
+                  base: 0,
+                  sm: 5,
+                }}
+                alignItems="flex-start"
               >
-                <HStack
-                  mt={{ lg: 0, md: 0 }}
-                  spacing={5}
-                  px={{
-                    base: 0,
-                    sm: 5,
-                  }}
-                  alignItems="flex-start"
-                >
-                  <IconButton
-                    aria-label="facebook"
-                    variant="ghost"
-                    size="lg"
-                    isRound={true}
-                    className="hover:bg-primary"
-                    _hover={{ bg: "primary" }}
-                    icon={
-                      <Link
-                        href="https://www.facebook.com/profile.php?id=100092986851803"
-                        target="_blank"
-                      >
-                        <MdFacebook className="text-primaryHover" size="28px" />
-                      </Link>
-                    }
-                  />
-                  <IconButton
-                    aria-label="instagram"
-                    variant="ghost"
-                    size="lg"
-                    isRound={true}
-                    className="hover:bg-primary"
-                    _hover={{ bg: "primary" }}
-                    icon={
-                      <Link
-                        href="https://instagram.com/_dierenmanieren_?igshid=MzNlNGNkZWQ4Mg=="
-                        target="_blank"
-                      >
-                        <FaInstagram
-                          className="text-primaryHover"
-                          size="28px"
-                        />
-                      </Link>
-                    }
-                  />
-                  <IconButton
-                    aria-label="whatsapp"
-                    variant="ghost"
-                    size="lg"
-                    isRound={true}
-                    className="hover:bg-primary"
-                    _hover={{ bg: "primary" }}
-                    icon={
-                      <Link href="https://wa.me/31629178009" target="_blank">
-                        <FaWhatsapp className="text-primaryHover" size="28px" />
-                      </Link>
-                    }
-                  />
-                  <IconButton
-                    aria-label="whatsapp"
-                    variant="ghost"
-                    size="lg"
-                    isRound={true}
-                    className="hover:bg-primary"
-                    _hover={{ bg: "primary" }}
-                    icon={
-                      <Link href="mailto:info.dierenmanieren@gmail.com">
-                        <MdEmail className="text-primaryHover" size="28px" />
-                      </Link>
-                    }
-                  />
-                  <IconButton
-                    aria-label="whatsapp"
-                    variant="ghost"
-                    size="lg"
-                    isRound={true}
-                    className="hover:bg-primary"
-                    _hover={{ bg: "primary" }}
-                    icon={
-                      <Link href="tel:31629178009">
-                        <MdPhone className="text-primaryHover" size="28px" />
-                      </Link>
-                    }
-                  />
-                </HStack>
-              </Center>
+                <IconButton
+                  aria-label="facebook"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  className="hover:bg-primary"
+                  _hover={{ bg: "primary" }}
+                  icon={
+                    <Link
+                      href="https://www.facebook.com/profile.php?id=100092986851803"
+                      target="_blank"
+                    >
+                      <MdFacebook className="text-primaryHover" size="28px" />
+                    </Link>
+                  }
+                />
+                <IconButton
+                  aria-label="instagram"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  className="hover:bg-primary"
+                  _hover={{ bg: "primary" }}
+                  icon={
+                    <Link
+                      href="https://instagram.com/_dierenmanieren_?igshid=MzNlNGNkZWQ4Mg=="
+                      target="_blank"
+                    >
+                      <FaInstagram className="text-primaryHover" size="28px" />
+                    </Link>
+                  }
+                />
+                <IconButton
+                  aria-label="whatsapp"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  className="hover:bg-primary"
+                  _hover={{ bg: "primary" }}
+                  icon={
+                    <Link href="https://wa.me/31629178009" target="_blank">
+                      <FaWhatsapp className="text-primaryHover" size="28px" />
+                    </Link>
+                  }
+                />
+                <IconButton
+                  aria-label="whatsapp"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  className="hover:bg-primary"
+                  _hover={{ bg: "primary" }}
+                  icon={
+                    <Link href="mailto:info.dierenmanieren@gmail.com">
+                      <MdEmail className="text-primaryHover" size="28px" />
+                    </Link>
+                  }
+                />
+                <IconButton
+                  aria-label="whatsapp"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  className="hover:bg-primary"
+                  _hover={{ bg: "primary" }}
+                  icon={
+                    <Link href="tel:+31629178009">
+                      <MdPhone className="text-primaryHover" size="28px" />
+                    </Link>
+                  }
+                />
+              </HStack>
+              {/* </Center> */}
               <Center
                 alignItems={"flex-start"}
                 display={{
