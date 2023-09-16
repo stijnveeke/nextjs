@@ -294,14 +294,14 @@ export const ContactForm: React.FC = () => {
                             mail.value +
                             ".";
                           window.open(
-                            "https://api.whatsapp.com/send?phone=31683542957&text=" +
+                            "https://api.whatsapp.com/send?phone=31629178009&text=" +
                               encodeURIComponent(whatsappMessage),
                             "_blank"
                           );
                         }}
                       >
                         <FormControl id="name" className="w-full mt-2">
-                          <FormLabel>Your Name</FormLabel>
+                          <FormLabel>Naam</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement pointerEvents="none">
                               <BsPerson
@@ -357,7 +357,7 @@ export const ContactForm: React.FC = () => {
                           </InputGroup>
                         </FormControl>
                         <FormControl id="message" className="mt-2">
-                          <FormLabel>Message</FormLabel>
+                          <FormLabel>Bericht</FormLabel>
                           <Textarea
                             name="message"
                             bg={"white"}
@@ -383,7 +383,7 @@ export const ContactForm: React.FC = () => {
                             }}
                             type="submit"
                           >
-                            Send Message
+                            Verstuur Bericht
                           </Button>
                         </FormControl>
                       </form>

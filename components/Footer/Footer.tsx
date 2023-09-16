@@ -28,7 +28,7 @@ export default function SmallWithSocial() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text>© 2022 dieren-manieren.nl. All rights reserved</Text>
+        <Text>© 2023 dieren-manieren.nl. All rights reserved</Text>
         <HStack
           mt={{ lg: 0, md: 0 }}
           spacing={5}
