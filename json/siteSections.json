@@ -12,25 +12,24 @@
     ],
     "cards": [
       {
-        "imageUrl": "/assets/CarouselImage1.jpg",
+        "imageUrl": "/assets/IntroductionPicture1Improved.jpg",
         "imageAlt": "picture 1",
-        "marginTop": {
-          "base": "30%",
-          "lg": "25%"
+        "objectPosition": {
+          "base": "center 30%"
         }
       },
       {
-        "imageUrl": "/assets/carouselimagewebsitefullwidth2.jpeg",
+        "imageUrl": "/assets/IntroductionPicture2Improved.jpg",
         "imageAlt": "picture 2",
-        "marginTop": {
-          "base": "65%"
+        "objectPosition": {
+          "base": "center 50%"
         }
       },
       {
-        "imageUrl": "/assets/CarouselImage3.jpeg",
+        "imageUrl": "/assets/IntroductionPicture3Improved.jpg",
         "imageAlt": "picture 3",
-        "marginTop": {
-          "base": "45%"
+        "objectPosition": {
+          "base": "center 30%"
         }
       }
     ]
