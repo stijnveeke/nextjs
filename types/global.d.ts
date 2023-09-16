@@ -24,6 +24,13 @@ declare global {
 
   interface ICarouselWithCaption extends ISiteSection, IComponentSection {
     cards: Array<{
+      objectPosition: {
+        base?: string;
+        sm?: string;
+        md?: string;
+        lg?: string;
+        xl?: string;
+      };
       imageUrl: string;
       imageAlt: string;
       marginTop?: {

@@ -219,7 +219,10 @@ export const NavBar: React.FC<{
               className="hover:bg-primaryHover"
               _hover={{ bg: "primaryHover" }}
               icon={
-                <Link href="#introduction" target="_blank">
+                <Link
+                  href="https://instagram.com/_dierenmanieren_?igshid=MzNlNGNkZWQ4Mg=="
+                  target="_blank"
+                >
                   <FaInstagram className="text-primary" size="28px" />
                 </Link>
               }

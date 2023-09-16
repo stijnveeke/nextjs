@@ -30,6 +30,7 @@ export const ContentToHtml: React.FC<{
             strong: ({ node, ...props }) => (
               <strong {...props} className={"text-primaryHover"} />
             ),
+            p: ({ node, ...props }) => <Text {...props} className={"mb-2"} />,
           }}
         >
           {content}
