@@ -8,6 +8,7 @@ import ChakraServerNavbar from "../components/Navbar/ChakraServerNavbar";
 import PageContent from "./PageContent";
 import React from "react";
 import { ServerProviders } from "./ServerProviders";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,9 @@ export default async function RootLayout({ children }) {
           name="keywords"
           content="zorgboerderij, dagbesteding, honden coaching, paarden coaching, natuur, therapie, dieren, dieren manieren"
         ></meta>
+        <meta name="google" content="notranslate" />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="https://dierenmanieren.nl" />
       </head>
       <body className={inter.className}>
         <ServerProviders>
@@ -54,6 +58,7 @@ export default async function RootLayout({ children }) {
             <Footer />
           </ClientProviders>
         </ServerProviders>
+        <Analytics />
       </body>
     </html>
   );
