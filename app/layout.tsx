@@ -12,8 +12,9 @@ import { ServerProviders } from "./ServerProviders";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Dieren manieren",
-  description: "",
+  title: "Dieren Manieren - Dagbesteding",
+  description:
+    "Voel je je verloren in de maatschappij of zoek je even rust? Bezoek onze zorgboerderij waar we met behulp van dieren manieren kijken naar een oplossing.",
 };
 
 export default async function RootLayout({ children }) {
@@ -28,7 +29,6 @@ export default async function RootLayout({ children }) {
     >
       <head>
         <link type="image/png" rel="icon" href="assets/dierenmanieren.png" />
-        <meta name="description" content="" />
       </head>
       <body className={inter.className}>
         <ServerProviders>
