@@ -5,6 +5,7 @@ import { HeaderTitle } from "./HeaderTitle";
 
 export default function HeaderWithText({
   title,
+  asH1,
   content,
 }: IIntroduction | ISupervision) {
   return (
@@ -13,7 +14,7 @@ export default function HeaderWithText({
         textAlign: "left",
       }}
     >
-      <HeaderTitle>{title}</HeaderTitle>
+      <HeaderTitle asH1={asH1}>{title}</HeaderTitle>
 
       <ContentToHtml content={content} />
     </div>

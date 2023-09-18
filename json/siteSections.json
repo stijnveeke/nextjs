@@ -36,7 +36,8 @@
   },
   {
     "id": "introduction",
-    "title": "Welkom",
+    "title": "Welkom bij Dieren Manieren",
+    "asH1": true,
     "contentUrl": "contents/introduction.md",
     "component": "HeaderWithText"
   },

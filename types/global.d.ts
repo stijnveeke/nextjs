@@ -6,6 +6,7 @@ declare global {
   interface ISiteSection {
     id: string;
     title: string;
+    asH1?: boolean;
     component:
       | string
       | Array<{

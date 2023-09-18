@@ -1,5 +1,3 @@
-Welkom bij Dieren manieren
-
 Voel je je opgesloten in de maatschappij, ben je niet meer zeker wat je nu doet of wat je wilt, ga je niet meer naar school of is werken nu niet aan de orde. Kom dan naar de boerderij. Hier vind je verschillende **Dieren Manieren** om gewoon even te zijn, niks te hoeven en je te verbinden met dier en natuur. Samen kijken we naar wat we vandaag gaan doen, heb je zin om lekker bezig te zijn of juist even niet? Weet je het zelf even niet? Dan helpen de dieren je dit duidelijk te maken, en ze weten precies wat ze daarmee moeten doen.
 
 Wil je dit een keer ervaren? Of lijkt het je wel wat om mij te helpen op de boerderij en tegelijkertijd begeleid te worden tijdens verschillende situaties en ontmoetingen met de dieren? Neem contact met mij op en dan plannen we een kennismaking!
