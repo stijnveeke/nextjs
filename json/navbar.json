@@ -41,17 +41,14 @@
       "children": [
         {
           "label": "Dagbesteding",
-          "subLabel": "Lekker gezellig een hele dag met de dieren bezig zijn.",
           "scrollId": "daycare"
         },
         {
           "label": "Paarden coaching",
-          "subLabel": "Ik geef paardencoaching om te kijken hoe jij erbij staat en wat de paarden aangeven met hun lichaamstaal.",
           "scrollId": "horsecoaching"
         },
         {
           "label": "Honden coaching",
-          "subLabel": "Ik geef met mijn hond River hondencoaching, hierin gaan we over in gesprek waar de persoon moeite mee heeft.",
           "scrollId": "dogcoaching"
         }
       ]
@@ -96,7 +93,7 @@
     {
       "icon": "MdPhone",
       "linkOptions": {
-        "href": "tel:31629178009"
+        "href": "tel:+31629178009"
       }
     }
   ]
