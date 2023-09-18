@@ -29,6 +29,12 @@ export default async function RootLayout({ children }) {
     >
       <head>
         <link type="image/png" rel="icon" href="assets/dierenmanieren.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="og:title" content={metadata.title} />
+        <meta name="og:description" content={metadata.description} />
+        <meta name="og:image" content="assets/dierenmanieren.png" />
+        <meta name="og:url" content="https://dierenmanieren.nl" />
+        <meta property="og:type" content="website" />
       </head>
       <body className={inter.className}>
         <ServerProviders>
