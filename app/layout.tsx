@@ -35,6 +35,11 @@ export default async function RootLayout({ children }) {
         <meta name="og:image" content="assets/dierenmanieren.png" />
         <meta name="og:url" content="https://dierenmanieren.nl" />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="assets/dierenmanieren.png" />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content="assets/dierenmanieren.png" />
+        <meta name="twitter:url" content="https://dierenmanieren.nl" />
       </head>
       <body className={inter.className}>
         <ServerProviders>
