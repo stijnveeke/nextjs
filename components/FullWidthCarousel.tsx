@@ -31,6 +31,7 @@ const FullWidthCarousel: React.FC<ICarouselWithCaption> = ({ cards }) => {
                 src={card.imageUrl ?? ""}
                 alt={card.imageAlt ?? ""}
                 objectFit="cover"
+                priority={true}
                 style={{
                   objectPosition: card.objectPosition.base,
                 }}
