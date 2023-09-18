@@ -40,6 +40,10 @@ export default async function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content="assets/dierenmanieren.png" />
         <meta name="twitter:url" content="https://dierenmanieren.nl" />
+        <meta
+          name="keywords"
+          content="zorgboerderij, dagbesteding, honden coaching, paarden coaching, natuur, therapie, dieren, dieren manieren"
+        ></meta>
       </head>
       <body className={inter.className}>
         <ServerProviders>
