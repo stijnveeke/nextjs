@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Dieren Manieren - Dagbesteding",
   description:
-    "Voel je je verloren in de maatschappij of zoek je even rust? Bezoek onze zorgboerderij waar we met behulp van dieren manieren kijken naar een oplossing.",
+    "Voel je je opgesloten in de maatschappij, ben je niet meer zeker wat je nu doet of wat je wilt, ga je niet meer naar school of is werken nu niet aan de orde. Kom dan naar de zorgboerderij.",
 };
 
 export default async function RootLayout({ children }) {
