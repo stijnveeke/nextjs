@@ -72,6 +72,7 @@ export default async function Page() {
           }
           style={{
             scrollMarginTop: "150px",
+            background: "transparent",
           }}
           id={section.id}
         >
