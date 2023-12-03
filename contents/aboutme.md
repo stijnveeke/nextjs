@@ -1,4 +1,4 @@
-Mijn naam is Louise Nederlof, geboren in april 1998 en ik woon samen met mijn vriend in Moerstraten, tussen Roosendaal en Bergen op zoom in. Ons huisje delen we met onze 3 potige kat Moni en River onze labradoodle reu. Onze tuin delen we ook met een aantal dieren namelijk 4 paarden, 4 konijnen en een aantal kippen.
+Mijn naam is Louise Nederlof, geboren in april 1998 en ik woon samen met mijn vriend in Moerstraten, tussen Roosendaal en Bergen op zoom in. Ons huisje delen we met onze 3 potige kat Moni en River onze labradoodle reu. Onze tuin delen we ook met een aantal dieren namelijk 3 paarden, 3 konijnen en een aantal kippen.
 
 Vanaf dat ik 2 of 3 jaar was, was ik al vrienden met een hond 3 keer zo groot als ik. Na heel lang zeuren kregen we op mijn 12e onze eerste hond Daisy, een labradoodle teefje. In die tijd reed ik ook al 5 jaar paard op de manege, op mijn 15e stopte ik bij de manege en kreeg ik mijn eerste eigen paard, Magic! Na meer dan 10 jaar en veel gebeurtenissen later kennen we elkaar door en door!
 
